@@ -3,190 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facility Pulse | Energy Consulting for the Future</title>
-  <meta name="description" content="Strategic energy consulting to reduce costs, achieve sustainability goals, and optimize your facility's performance.">
+  <title>Facility Pulse | Save Energy & Earn Money for Free</title>
+  <meta name="description" content="Facility Pulse finds energy savings and revenue opportunities analyzing your facility's smart meter data. Our services are 100% paid-for.">
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
+
+  <header class="header" id="header">
     <nav class="nav container">
       <a href="#" class="logo">
-        <span class="logo-icon">◈</span>
-        <span>Facility Pulse</span>
+        <img src="logo.png" alt="Facility Pulse" class="logo-img">
       </a>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
-        <li><a href="#approach">Approach</a></li>
-        <li><a href="#contact" class="btn btn-primary">Get in Touch</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#green-button">Green Button</a></li>
+        <li><a href="#contact" class="btn btn-primary nav-cta">Contact Us</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="Toggle menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
   <main>
+
     <section class="hero">
-      <div class="hero-bg"></div>
+      <div class="hero-decoration hero-decoration-1"></div>
+      <div class="hero-decoration hero-decoration-2"></div>
       <div class="container hero-content">
-        <p class="hero-tagline">Strategic Energy Consulting</p>
-        <h1 class="hero-title">
-          Power your facilities with
-          <span class="highlight">intelligent energy</span>
-        </h1>
-        <p class="hero-subtitle">
-          We help commercial and industrial organizations reduce costs, achieve sustainability targets, 
-          and optimize performance through expert analysis and proven strategies.
+        <span class="badge">Energy Consulting</span>
+        <h1>Save energy &amp; earn money<br><span class="gradient-text">for free</span></h1>
+        <p class="hero-description">
+          Facility Pulse finds energy savings and revenue opportunities analyzing your facility's
+          smart meter data. Not only are our services paid for, our approach generates a revenue
+          stream for your organization.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary btn-lg">Schedule a Consultation</a>
-          <a href="#services" class="btn btn-secondary btn-lg">Explore Services</a>
+          <a href="#about" class="btn btn-outline btn-lg">Learn More</a>
         </div>
-        <div class="hero-stats">
-          <div class="stat">
-            <span class="stat-value">40%</span>
-            <span class="stat-label">Average cost reduction</span>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Our Approach</span>
+          <h2>Expertise that pays for itself</h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-text fade-in">
+            <p>
+              Facility Pulse leverages proprietary software and deep building energy expertise
+              to reduce electrical consumption and generate financial returns for clients.
+            </p>
+            <p>
+              By analyzing smart meter data to identify no-cost savings opportunities, we enroll
+              eligible facilities in the <strong>Save On Energy &ndash; Energy Performance Program</strong>,
+              enabling them to receive payments for verified savings.
+            </p>
+            <div class="callout">
+              <span class="callout-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </span>
+              <p>As a result, our services are <strong>100% paid-for</strong>.</p>
+            </div>
           </div>
-          <div class="stat">
-            <span class="stat-value">500+</span>
-            <span class="stat-label">Projects delivered</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">$2B+</span>
-            <span class="stat-label">Client savings achieved</span>
+          <div class="about-features fade-in">
+            <div class="feature-card">
+              <div class="feature-icon blue">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+              </div>
+              <h4>No-Cost Savings</h4>
+              <p>Energy-saving measures that require zero capital investment from your organization.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon purple">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+              <h4>Revenue Generation</h4>
+              <p>Earn payments for verified energy savings through the Energy Performance Program.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon grey">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h4>Fully Funded</h4>
+              <p>Our services come at no cost to you &mdash; funded through the savings we help generate.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="services">
+    <section id="services" class="section">
       <div class="container">
-        <p class="section-tagline">What We Do</p>
-        <h2 class="section-title">Comprehensive Energy Solutions</h2>
+        <div class="section-header center fade-in">
+          <span class="section-label">What We Do</span>
+          <h2>Our Services</h2>
+        </div>
         <div class="services-grid">
-          <article class="service-card">
-            <div class="service-icon">⚡</div>
-            <h3>Energy Audits & Analysis</h3>
-            <p>Deep-dive assessments of your facility's energy consumption, identifying inefficiencies and opportunities for improvement.</p>
+          <article class="service-card fade-in">
+            <div class="service-icon-wrap blue">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18h6"/><path d="M10 22h4"/>
+                <path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/>
+              </svg>
+            </div>
+            <h3>Energy Advisory</h3>
+            <p>
+              Our experts analyze your facility's smart meter data using proprietary software
+              to uncover no-cost energy-saving opportunities. We provide targeted, actionable
+              recommendations backed by deep building energy expertise.
+            </p>
           </article>
-          <article class="service-card">
-            <div class="service-icon">🌱</div>
-            <h3>Sustainability Strategy</h3>
-            <p>Carbon reduction roadmaps, renewable energy purchasing strategies, and ESG compliance guidance.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">📊</div>
-            <h3>Procurement & Markets</h3>
-            <p>Customized energy budget forecasts, market trend analysis, and strategic procurement optimization.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">🔋</div>
-            <h3>Generation & Storage</h3>
-            <p>Onsite solar, battery storage, and thermal solutions—from feasibility studies to implementation support.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">📋</div>
-            <h3>Regulatory & Incentives</h3>
-            <p>IRA programs, utility tariffs, and incentive identification—we navigate the complexity so you don't have to.</p>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">📈</div>
-            <h3>Performance Benchmarking</h3>
-            <p>Industry benchmarking, operational gap analysis, and ongoing performance tracking.</p>
+          <article class="service-card fade-in">
+            <div class="service-icon-wrap purple">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/>
+              </svg>
+            </div>
+            <h3>Consumption Monitoring</h3>
+            <p>
+              We continuously track and analyze your facility's energy consumption patterns,
+              identifying trends, anomalies, and opportunities to optimize performance and
+              reduce costs over time.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about">
-      <div class="container about-grid">
-        <div class="about-content">
-          <p class="section-tagline">Why Facility Pulse</p>
-          <h2 class="section-title">Experts who understand your business</h2>
-          <p class="about-text">
-            Our team brings decades of combined experience across energy markets, engineering, and facility operations. 
-            We don't just deliver reports—we partner with you to implement changes that stick.
-          </p>
-          <ul class="about-features">
-            <li>Independent, conflict-free advice</li>
-            <li>Data-driven, transparent methodology</li>
-            <li>Commercial, industrial & institutional focus</li>
-          </ul>
-        </div>
-        <div class="about-visual">
-          <div class="about-card">
-            <blockquote>
-              "Facility Pulse helped us cut energy costs by 35% while hitting our sustainability targets two years ahead of schedule."
-            </blockquote>
-            <cite>— Fortune 500 Manufacturing Client</cite>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="approach" class="approach">
+    <section id="how-it-works" class="section section-blue">
       <div class="container">
-        <p class="section-tagline">How We Work</p>
-        <h2 class="section-title">A clear path to results</h2>
-        <div class="approach-steps">
-          <div class="step">
-            <span class="step-number">01</span>
-            <h3>Discover</h3>
-            <p>We analyze your current energy profile, goals, and constraints.</p>
+        <div class="section-header center fade-in">
+          <span class="section-label">The Process</span>
+          <h2>How We Work</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card fade-in">
+            <div class="step-number">1</div>
+            <h3>Analysis</h3>
+            <p>We analyze your smart meter data using proprietary in-house software.</p>
           </div>
-          <div class="step">
-            <span class="step-number">02</span>
-            <h3>Strategize</h3>
-            <p>We develop a tailored roadmap with prioritized recommendations.</p>
+          <div class="step-card fade-in">
+            <div class="step-number">2</div>
+            <h3>Strategy</h3>
+            <p>We meet virtually to present our findings and provide targeted building energy recommendations.</p>
           </div>
-          <div class="step">
-            <span class="step-number">03</span>
-            <h3>Implement</h3>
-            <p>We support execution—procurement, projects, and performance tracking.</p>
+          <div class="step-card fade-in">
+            <div class="step-number">3</div>
+            <h3>Implementation</h3>
+            <p>Your facility implements our no-cost energy-saving measures.</p>
+          </div>
+          <div class="step-card fade-in">
+            <div class="step-number">4</div>
+            <h3>Enrollment</h3>
+            <p>We manage your Energy Performance Program enrollment so you can begin earning revenue from verified energy savings.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <div class="container contact-inner">
-        <h2 class="contact-title">Ready to optimize your energy?</h2>
-        <p class="contact-subtitle">Schedule a no-obligation consultation. We'll discuss your goals and explore how we can help.</p>
-        <form class="contact-form">
-          <div class="form-row">
-            <input type="text" placeholder="Your name" required>
-            <input type="email" placeholder="Email address" required>
-          </div>
-          <input type="text" placeholder="Company / Organization">
-          <textarea placeholder="Tell us about your energy challenges or goals..." rows="4"></textarea>
-          <button type="submit" class="btn btn-primary btn-lg">Request Consultation</button>
-        </form>
+    <section id="green-button" class="section">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <h2>Green Button Connect My Data (CMD)</h2>
+          <p class="section-subtitle">Select your facility's electric utility provider:</p>
+        </div>
+        <div class="utility-grid fade-in">
+          <button class="utility-btn" type="button">
+            <div class="utility-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <span class="utility-name">Alectra</span>
+          </button>
+          <button class="utility-btn" type="button">
+            <div class="utility-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <span class="utility-name">Enova</span>
+          </button>
+        </div>
       </div>
     </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="section-header center fade-in">
+            <h2>Ready to save and earn?</h2>
+            <p class="section-subtitle">Schedule a no-obligation consultation. We'll discuss your goals and explore how we can help.</p>
+          </div>
+          <form class="contact-form fade-in" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="facility">Facility Name</label>
+              <input type="text" id="facility" name="facility" placeholder="Your facility name">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your energy goals..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full" id="submitBtn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-brand">
-        <a href="#" class="logo">
-          <span class="logo-icon">◈</span>
-          <span>Facility Pulse</span>
-        </a>
-        <p>Strategic energy consulting for commercial, industrial, and institutional facilities.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="logo.png" alt="Facility Pulse" class="logo-img footer-logo">
+          </a>
+          <p>Save energy &amp; earn money for free.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#green-button">Green Button</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://www.facilitypulse.ca" target="_blank" rel="noopener">www.facilitypulse.ca</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#approach">Approach</a>
-        <a href="#contact">Contact</a>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Facility Pulse. All rights reserved.</p>
       </div>
-      <p class="footer-copy">© 2025 Facility Pulse. All rights reserved.</p>
     </div>
   </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="script.js"></script>
 </body>
