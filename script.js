@@ -4,6 +4,8 @@ const header = document.getElementById('header');
 const scrollTopBtn = document.getElementById('scrollTop');
 const contactForm = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
+const utilitySearch = document.getElementById('utilitySearch');
+const noResults = document.getElementById('noResults');
 
 // Mobile menu toggle
 navToggle?.addEventListener('click', () => {
@@ -54,6 +56,31 @@ const fadeObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
 document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+// Utility search filter
+utilitySearch?.addEventListener('input', (e) => {
+  const query = e.target.value.toLowerCase().trim();
+  const categories = document.querySelectorAll('.utility-category');
+  let totalVisible = 0;
+
+  categories.forEach(category => {
+    const items = category.querySelectorAll('.utility-item');
+    let categoryVisible = 0;
+
+    items.forEach(item => {
+      const matches = item.textContent.toLowerCase().includes(query);
+      item.style.display = matches ? '' : 'none';
+      if (matches) categoryVisible++;
+    });
+
+    category.style.display = categoryVisible > 0 ? '' : 'none';
+    totalVisible += categoryVisible;
+  });
+
+  if (noResults) {
+    noResults.style.display = totalVisible === 0 ? 'block' : 'none';
+  }
+});
 
 // Contact form — opens user's email client with pre-filled message
 contactForm?.addEventListener('submit', (e) => {
