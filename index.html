@@ -19,7 +19,16 @@
         <img src="logo.png" alt="Facility Pulse" class="logo-img">
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#solutions">Solutions</a></li>
+        <li class="nav-dropdown">
+          <a href="#solutions" class="nav-dropdown-toggle">
+            Solutions
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <ul class="nav-dropdown-menu">
+            <li><a href="#solutions">Remote Energy Review</a></li>
+            <li><a href="#cpv">Continuous Performance Verification</a></li>
+          </ul>
+        </li>
         <li><a href="#about">About</a></li>
         <li><a href="#utilities">Utilities</a></li>
         <li><a href="#contact" class="btn btn-primary nav-cta">Contact Us</a></li>
@@ -37,7 +46,7 @@
       <div class="hero-decoration hero-decoration-1"></div>
       <div class="hero-decoration hero-decoration-2"></div>
       <div class="container hero-content">
-        <span class="badge">Ontario's Energy Partner</span>
+        <span class="badge">Your Energy Partner</span>
         <h1>Data-driven energy savings<br><span class="gradient-text">for free</span></h1>
         <p class="hero-description">
           Facility Pulse delivers complimentary energy analysis for commercial and industrial
@@ -64,29 +73,28 @@
           <h3>Remote Energy Review</h3>
         </div>
 
-        <div class="solution-overview fade-in">
-          <div class="solution-text">
-            <p>
-              Our flagship service provides a comprehensive analysis of your facility's smart meter
-              data to identify actionable, no-cost energy optimization opportunities. Leveraging
-              proprietary analytics and deep operational expertise, we deliver tailored recommendations
-              to optimize your existing equipment &mdash; without any capital expenditure.
-            </p>
-            <p>
-              This service is entirely complimentary. We believe every facility deserves access to
-              energy intelligence, which is why we will never charge for analyzing your data or
-              providing energy-saving recommendations.
-            </p>
-            <div class="stat-highlight">
-              <span class="stat-number">15%</span>
-              <span class="stat-text">Average reduction in energy consumption achieved by participating facilities</span>
-            </div>
+        <div class="solution-text fade-in">
+          <p>
+            Our flagship service provides a comprehensive analysis of your facility's smart meter
+            data to identify actionable, no-cost energy optimization opportunities. Leveraging
+            proprietary analytics and deep operational expertise, we deliver tailored recommendations
+            to optimize your existing equipment &mdash; without any capital expenditure.
+          </p>
+          <p>
+            This service is entirely complimentary. We believe every facility deserves access to
+            energy intelligence, which is why we will never charge for analyzing your data or
+            providing energy-saving recommendations.
+          </p>
+          <div class="stat-highlight">
+            <span class="stat-number">15%</span>
+            <span class="stat-text">Average reduction in energy consumption achieved by participating facilities</span>
           </div>
-          <div class="solution-visual">
-            <div class="chart-wrapper">
-              <img src="energy-savings-chart.png" alt="Energy demand chart showing current consumption consistently lower than the previous year baseline, demonstrating measurable savings" class="chart-img">
-              <p class="chart-caption">Real-world results: Weekly demand profile showing current consumption (solid) versus previous year baseline (dashed)</p>
-            </div>
+        </div>
+
+        <div class="solution-chart fade-in">
+          <div class="chart-wrapper">
+            <img src="energy-savings-chart.png" alt="Energy demand chart showing current consumption consistently lower than the previous year baseline, demonstrating measurable savings" class="chart-img">
+            <p class="chart-caption">Real-world results: Weekly demand profile showing current consumption (solid) versus previous year baseline (dashed)</p>
           </div>
         </div>
 
@@ -119,7 +127,7 @@
     </section>
 
     <!-- ===== SOLUTIONS: CONTINUOUS PERFORMANCE VERIFICATION ===== -->
-    <section class="section section-alt">
+    <section id="cpv" class="section section-alt">
       <div class="container">
         <div class="solution-intro fade-in">
           <span class="solution-badge badge-sub">Subscription</span>

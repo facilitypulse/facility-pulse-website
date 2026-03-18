@@ -6,27 +6,52 @@ const contactForm = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const utilitySearch = document.getElementById('utilitySearch');
 const noResults = document.getElementById('noResults');
+const dropdown = document.querySelector('.nav-dropdown');
+const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
 
 // Mobile menu toggle
 navToggle?.addEventListener('click', () => {
   navLinks.classList.toggle('open');
   navToggle.classList.toggle('active');
   document.body.classList.toggle('nav-open');
+  dropdown?.classList.remove('open');
 });
 
-// Close mobile menu on link click
+// Solutions dropdown toggle (mobile)
+dropdownToggle?.addEventListener('click', (e) => {
+  if (window.innerWidth <= 768) {
+    e.preventDefault();
+    e.stopPropagation();
+    dropdown.classList.toggle('open');
+  }
+});
+
+// Close mobile menu on nav link click (but not the dropdown toggle itself)
 navLinks?.querySelectorAll('a').forEach(link => {
+  if (link.classList.contains('nav-dropdown-toggle')) return;
   link.addEventListener('click', () => {
     navLinks.classList.remove('open');
     navToggle?.classList.remove('active');
     document.body.classList.remove('nav-open');
+    dropdown?.classList.remove('open');
+  });
+});
+
+// Also close menu when dropdown sub-items are clicked
+document.querySelectorAll('.nav-dropdown-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle?.classList.remove('active');
+    document.body.classList.remove('nav-open');
+    dropdown?.classList.remove('open');
   });
 });
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
-    const target = document.querySelector(this.getAttribute('href'));
+    const href = this.getAttribute('href');
+    const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
