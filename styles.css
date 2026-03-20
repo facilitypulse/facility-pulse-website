@@ -966,6 +966,13 @@ ul {
   color: var(--blue);
 }
 
+.calc-disclaimer {
+  font-size: 0.8125rem;
+  font-style: italic;
+  color: var(--grey-500);
+  padding: 0.75rem 2rem 1.5rem;
+}
+
 /* ===== Contact ===== */
 
 .contact-wrapper {
