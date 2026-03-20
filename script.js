@@ -139,3 +139,32 @@ contactForm?.addEventListener('submit', (e) => {
     submitBtn.classList.remove('sent');
   }, 4000);
 });
+
+// Savings Calculator
+const utilityBillInput = document.getElementById('utilityBill');
+
+function formatCurrency(value) {
+  return '$' + value.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function updateCalculator() {
+  const utilityBill = parseFloat(utilityBillInput?.value) || 0;
+
+  const monthlyCost = utilityBill * 0.035;
+  const yearlyCost = monthlyCost * 12;
+  const annualUsage = utilityBill * 12 / 0.15;
+  const EPP = 0.15 * (annualUsage * 0.9 * 0.08 + annualUsage * 0.1 * 0.3);
+  const billSavings = utilityBill * 12 * 0.15;
+  const net = billSavings + EPP - yearlyCost;
+
+  document.getElementById('calcMonthlyCost').textContent = formatCurrency(monthlyCost);
+  document.getElementById('calcYearlyCost').textContent = formatCurrency(yearlyCost);
+  document.getElementById('calcEPP').textContent = formatCurrency(EPP);
+  document.getElementById('calcBillSavings').textContent = formatCurrency(billSavings);
+
+  const netEl = document.getElementById('calcNet');
+  netEl.textContent = formatCurrency(net);
+  netEl.style.color = net >= 0 ? '' : '#DC2626';
+}
+
+utilityBillInput?.addEventListener('input', updateCalculator);

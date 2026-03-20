@@ -32,6 +32,7 @@
         </li>
         <li><a href="#about">About</a></li>
         <li><a href="#utilities">Utilities</a></li>
+        <li><a href="#calculator">Calculator</a></li>
         <li><a href="#contact" class="btn btn-primary nav-cta">Contact Us</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -306,6 +307,52 @@
       </div>
     </section>
 
+    <!-- ===== SAVINGS CALCULATOR ===== -->
+    <section id="calculator" class="section section-blue">
+      <div class="container">
+        <div class="section-header center fade-in">
+          <span class="section-label">Calculator</span>
+          <h2>Estimate Your Savings</h2>
+          <p class="section-subtitle">See how much Facility Pulse can save your facility each year</p>
+        </div>
+
+        <div class="calc-widget fade-in">
+          <div class="calc-input-group">
+            <label for="utilityBill">Typical Monthly Electric Bill</label>
+            <div class="calc-input-wrapper">
+              <span class="calc-currency">$</span>
+              <input type="number" id="utilityBill" placeholder="0.00" min="0" step="0.01">
+            </div>
+          </div>
+
+          <div class="calc-divider"></div>
+
+          <div class="calc-results">
+            <div class="calc-row">
+              <span class="calc-label">Monthly Subscription Cost</span>
+              <span class="calc-value" id="calcMonthlyCost">$0.00</span>
+            </div>
+            <div class="calc-row">
+              <span class="calc-label">Yearly Subscription Cost</span>
+              <span class="calc-value" id="calcYearlyCost">$0.00</span>
+            </div>
+            <div class="calc-row">
+              <span class="calc-label">EPP Incentive Payment Per Year</span>
+              <span class="calc-value calc-value-positive" id="calcEPP">$0.00</span>
+            </div>
+            <div class="calc-row">
+              <span class="calc-label">Utility Bill Savings Per Year</span>
+              <span class="calc-value calc-value-positive" id="calcBillSavings">$0.00</span>
+            </div>
+            <div class="calc-row calc-row-total">
+              <span class="calc-label">Net Value Add Per Year</span>
+              <span class="calc-value" id="calcNet">$0.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ===== CONTACT ===== -->
     <section id="contact" class="section">
       <div class="container">
@@ -356,6 +403,7 @@
             <li><a href="#solutions">Solutions</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#utilities">Utilities Served</a></li>
+            <li><a href="#calculator">Calculator</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
