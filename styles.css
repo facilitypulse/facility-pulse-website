@@ -1,13 +1,13 @@
 :root {
-  --blue: #1565C0;
-  --blue-dark: #0D47A1;
-  --blue-light: #42A5F5;
-  --blue-50: #EFF6FF;
-  --purple: #7C3AED;
-  --purple-dark: #6D28D9;
-  --purple-light: #A78BFA;
-  --purple-50: #F5F3FF;
-  --grey-900: #0F172A;
+  --blue: #2D8FE8;
+  --blue-dark: #1A6BC8;
+  --blue-light: #60B0F4;
+  --blue-50: #EBF5FD;
+  --purple: #0D2040;
+  --purple-dark: #071428;
+  --purple-light: #8898B0;
+  --purple-50: #E8F0F8;
+  --grey-900: #0A1828;
   --grey-800: #1E293B;
   --grey-700: #334155;
   --grey-600: #475569;
@@ -113,7 +113,7 @@ ul {
 }
 
 .logo-img {
-  height: 48px;
+  height: 80px;
   width: auto;
 }
 
@@ -281,7 +281,7 @@ ul {
 .btn-primary:hover {
   background: var(--blue-dark);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(21, 101, 192, 0.3);
+  box-shadow: 0 4px 12px rgba(45, 143, 232, 0.35);
 }
 
 .btn-outline {
@@ -332,7 +332,7 @@ ul {
   right: -8%;
   width: 550px;
   height: 550px;
-  background: radial-gradient(circle, rgba(21, 101, 192, 0.07) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(45, 143, 232, 0.08) 0%, transparent 70%);
 }
 
 .hero-decoration-2 {
@@ -340,7 +340,7 @@ ul {
   left: -12%;
   width: 450px;
   height: 450px;
-  background: radial-gradient(circle, rgba(124, 58, 237, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(13, 32, 64, 0.06) 0%, transparent 70%);
 }
 
 @keyframes heroFadeIn {
@@ -408,7 +408,7 @@ ul {
 }
 
 .section-blue {
-  background: linear-gradient(180deg, var(--blue-50) 0%, var(--grey-50) 100%);
+  background: linear-gradient(180deg, var(--purple-50) 0%, var(--grey-50) 100%);
 }
 
 .section-header {
@@ -658,7 +658,7 @@ ul {
 
 .soe-callout {
   padding: 1.5rem 2rem;
-  background: linear-gradient(135deg, rgba(21, 101, 192, 0.05), rgba(124, 58, 237, 0.05));
+  background: linear-gradient(135deg, rgba(45, 143, 232, 0.06), rgba(13, 32, 64, 0.06));
   border-left: 3px solid var(--blue);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   margin: 2rem 0;
@@ -777,7 +777,7 @@ ul {
 .search-wrapper input:focus {
   outline: none;
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.1);
+  box-shadow: 0 0 0 3px rgba(45, 143, 232, 0.15);
 }
 
 .utility-category {
@@ -898,7 +898,7 @@ ul {
 .contact-form textarea:focus {
   outline: none;
   border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.1);
+  box-shadow: 0 0 0 3px rgba(45, 143, 232, 0.15);
 }
 
 #submitBtn.sent {
@@ -909,7 +909,7 @@ ul {
 /* ===== Footer ===== */
 
 .footer {
-  background: var(--grey-900);
+  background: var(--purple-dark);
   color: var(--grey-400);
   padding: 4rem 0 0;
 }
@@ -921,12 +921,22 @@ ul {
   padding-bottom: 3rem;
 }
 
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .footer-brand .logo {
+  display: block;
   margin-bottom: 1rem;
+  padding: 0;
+  line-height: 0;
 }
 
 .footer-logo {
-  height: 60px;
+  display: block;
+  height: 112px;
   width: auto;
   border-radius: var(--radius-sm);
 }
