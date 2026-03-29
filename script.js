@@ -168,3 +168,22 @@ function updateCalculator() {
 }
 
 utilityBillInput?.addEventListener('input', updateCalculator);
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const answer = item.querySelector('.faq-answer');
+    const isOpen = item.classList.contains('open');
+
+    if (isOpen) {
+      answer.style.maxHeight = null;
+      item.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    } else {
+      answer.style.maxHeight = answer.scrollHeight + 'px';
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
