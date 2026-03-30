@@ -41,6 +41,7 @@
       </button>
     </nav>
   </header>
+  <div class="nav-overlay" id="navOverlay"></div>
 
   <main>
 
@@ -81,7 +82,7 @@
             Our flagship service provides a comprehensive analysis of your facility's smart meter
             data to identify actionable, no-cost energy optimization opportunities. Leveraging
             proprietary analytics and deep operational expertise, we deliver tailored recommendations
-            to optimize your existing equipment &mdash; without any capital expenditure.
+            to optimize your existing equipment &mdash; without any capital expenditure or site visits.
           </p>
           <p>
             This service is entirely complimentary. We believe every facility deserves access to
@@ -203,8 +204,10 @@
           <div class="about-divider"></div>
           <p class="about-body">
             Our team brings deep expertise spanning energy engineering, efficiency consulting,
-            advisory services, and building energy analytics &mdash; delivering measurable results
-            for commercial and industrial facilities throughout Ontario.
+            advisory services, and building energy analytics. With experience working with
+            hundreds of facilities to lower their usage and monitor their performance using
+            energy models, we deliver measurable results for commercial and industrial
+            facilities throughout Ontario.
           </p>
         </div>
       </div>
@@ -351,39 +354,6 @@
             </div>
           </div>
           <p class="calc-disclaimer">Figures are estimates. Actual costs, savings, and incentive eligibility are site-specific.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="contact-wrapper">
-          <div class="section-header center fade-in">
-            <h2>Ready to save and earn?</h2>
-            <p class="section-subtitle">Schedule a no-obligation consultation. We'll discuss your goals and explore how we can help.</p>
-          </div>
-          <form class="contact-form fade-in" id="contactForm">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="facility">Facility Name</label>
-              <input type="text" id="facility" name="facility" placeholder="Your facility name">
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" placeholder="Tell us about your energy goals..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-full" id="submitBtn">Send Message</button>
-          </form>
         </div>
       </div>
     </section>
@@ -548,6 +518,39 @@
       </div>
     </section>
 
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="section-header center fade-in">
+            <h2>Ready to save and earn?</h2>
+            <p class="section-subtitle">Schedule a no-obligation consultation. We'll discuss your goals and explore how we can help.</p>
+          </div>
+          <form class="contact-form fade-in" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="facility">Facility Name</label>
+              <input type="text" id="facility" name="facility" placeholder="Your facility name">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your energy goals..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full" id="submitBtn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
@@ -573,6 +576,7 @@
         <div class="footer-contact-col">
           <h4>Contact</h4>
           <ul>
+            <li><a href="mailto:info@facilitypulse.ca">info@facilitypulse.ca</a></li>
             <li><a href="https://www.facilitypulse.ca" target="_blank" rel="noopener">www.facilitypulse.ca</a></li>
           </ul>
         </div>
